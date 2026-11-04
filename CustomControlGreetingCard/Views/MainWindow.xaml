@@ -4,9 +4,13 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CustomControlGreetingCard"
+        xmlns:controls="clr-namespace:CustomControlGreetingCard.Controls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+        Title="CustomControlGreetingCard" Height="450" Width="800"
+        Background="Gray">
+    <StackPanel Margin="20" VerticalAlignment="Center">
+        <!-- 2. Use your custom control just like a built-in tag! -->
+        <controls:GreetingCard CardTitle="Hello from Francisco!" />
+        <controls:GreetingCard CardTitle="Another card with a different title." />
+    </StackPanel>
 </Window>
